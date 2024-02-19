@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+{% block title %} Connexion {% endblock %}  
+{% block content %}
+    <section class="login-section">
+        <div class="login-body">
+            <div class="login-container">
+                <div class="title">Fomulaire de connection</div>
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+                <form action="/login" method="post">
+                    {% csrf_token %}
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" name="username" placeholder="Entrez votre nom d'utilisateur" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" name="password" placeholder="Entrez votre mot de passe" required>
+                        </div>
+
+                        <div class="button">
+                            <input type="submit" value="Se connecter">
+                        </div>
+
+
+                        <div class="pass-link">
+                            <a href="#">Mot de passe oublié ?</a>
+                        </div>
+
+                        <div class="register-link">
+                            Nouveau par ici ? <a href="#">S'inscrire</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

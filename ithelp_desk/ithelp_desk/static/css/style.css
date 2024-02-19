@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+.redressed {
+  font-family: 'Redressed', cursive;
+}
+
+.merriweather {
+  font-family: 'Merriweather' serif;
+}
+
+body {
+  background-image: url('../images/IA.png') center center fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cc-navbar {
+  background-color: rgba(0, 0 , 0 , 0.55);
+  font-family: 'Merriweather', serif;
+  box-shadow: 1px, 1px, 3px rgba(255, 255, 255, 0.54);
+}
+
+
+.cc-navbar .nav-link {
+  border-bottom: 1px solid transparent;
+  transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+.cc-navbar .nav-link:hover {
+  padding-bottom: 20px;
+  border-bottom-color: var(--bs-teal);
+}
+
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/IA.png') center center fixed no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.banner .banner-desc {
+  font-size: 48px;
+  font-weight: 400px;
+  color: #fff;
+}
+.btn-order {
+  color: var(--bs-teal);
+  border-color: var(--bs-teal);
+  transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:active {
+  color: #fff;
+  background-color: var(--bs-teal);
+}
+
+.social-icone {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.social-icone a {
+  padding: 5px;
+  margin-right: 4px;
+}
+.social-icone img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid;
+}
+
+
+.footer-section {
+  background-color: rgba(0, 0 , 0 , 0.55);
+  font-family: 'Merriweather', serif;
+  box-shadow: 1px, 1px, 3px rgba(255, 255, 255, 0.54);
+}
+
+
+/*register css */
+.register-section{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.register-body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #383434, #39373a);
+}
+
+.register-container {
+  max-width: 700px;
+  width: 100%;
+  background-color: gray;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.register-container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.register-container .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.register-container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.register-container form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+
+.register-container form .user-details .input-box input {
+  height: 45px;
+  width: 100%;
+}
+
+.register-container .user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  
+}
+
+
+.register-container .user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px slid #ccc;  
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.register-container .user-details .input-box input:focus,
+.register-container .user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+.register-container form .select-service .Service-title {
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.register-container form .select-service option {
+  width: 80%;
+  margin: 14px 0;
+}
+
+.register-container form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+
+
+.register-container form .button input{
+  height:100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #c850c0, #4158d0);
+}
+
+
+.register-container form .button .login-link {
+  position: relative;
+  display: flex;
+  padding-right: 20px;
+  padding: 20px;
+
+}
+
+.register-container form .button .login-link a{
+  text-decoration: none;
+  display: flex;
+  padding-left: 10px;
+  color: #fff;
+
+}
+
+.register-container form .button input:hover {
+  background: linear-gradient(135deg, #c850c0, #4158d0);
+}
+
+@media (max-width: 584px) {
+  .register-container {
+      max-width: 100%;
+  }
+
+  .register-container form .user-details .input-box {
+      margin-bottom: 15px;
+      width: 100%;
+  }
+
+  .register-container form .user-details {
+      max-height: 300px;
+      overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+      width: 0;
+  }
+}
+
+
+/*Login css */
+
+.login-section{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #383434, #39373a);
+}
+
+.login-container {
+  max-width: 700px;
+  width: 100%;
+  background-color: gray;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.login-container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.login-container .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.login-container form .user-details {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.login-container form .user-details .input-box {
+  margin-bottom: 15px;
+}
+
+
+.login-container form .user-details .input-box input {
+  height: 45px;
+  width: 100%;
+}
+
+
+
+.login-container .user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+.login-container .user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px slid #ccc;  
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.login-container .user-details .input-box input:focus,
+.login-container .user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+.login-container form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+
+
+.login-container form .button input{
+  height:100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #c850c0, #4158d0);
+}
+
+.login-container form .button input:hover {
+  background: linear-gradient(135deg, #c850c0, #4158d0);
+}
+
+
+.login-container form .pass-link {
+  font-size: 18px;
+}
+
+.login-container form .pass-link a {
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+.login-container form .register-link {
+  display: flex;
+  font-size: 18px;
+}
+
+.login-container form .register-link a {
+  text-decoration: none;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 18px;
+}
